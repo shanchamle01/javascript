@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse String</title>
+    <script>
+        function ReverseString() {
+            // Prompt the user to enter a string
+            var str = prompt("Enter the string to reverse:");
+
+            // Check if input is valid
+            if (!str || str.length < 2 || typeof str !== 'string') {
+                document.write("Not valid");
+                return;
+            }
+
+            // Reverse the string by splitting, reversing, and joining it
+            var reversedStr = str.split("").reverse().join("");
+
+            // Display the reversed string
+            document.write("Reversed String: " + reversedStr);
+        }
+
+        // Call the function when the script loads
+        ReverseString();
+    </script>
+</head>
+<body>
+</body>
+</html>
