@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Area</title>
+</head>
+<body>
+    <script>
+        
+        const base = 8;      
+        const height = 4;    
+        const triangleArea = (base * height) / 2;
+
+        document.write("Base: " + base + "<br>");
+        document.write("Height: " + height + "<br>");
+        document.write("Area of Triangle: " + triangleArea + "<br>");
+    </script>
+</body>
+</html>
