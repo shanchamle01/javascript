@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Area</title>
+</head>
+<body>
+    <script>
+        
+        const length = 10; 
+        const width = 5;   
+        const rectangleArea = length * width;
+
+        document.write("Length: " + length + "<br>");
+        document.write("Width: " + width + "<br>");
+        document.write("Area of Rectangle: " + rectangleArea + "<br>");
+    </script>
+</body>
+</html>
