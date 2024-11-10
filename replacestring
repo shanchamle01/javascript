@@ -1,0 +1,9 @@
+<html> 
+<head> 
+<script> 
+var string = 'Hariom Bijamwar'; 
+var newstring = string.replace(/Hariom Bijamwar/, 'HARI'); 
+document.write(newstring); 
+</script> 
+</head> 
+</html>
