@@ -1,0 +1,66 @@
+<html>
+ <head>
+ </head>
+ <script>
+ let setA=new Set(["apple","banana","orange"]);
+ let setB=new Set(["apple","pineapple","mango"]);
+ function union(setA , setB)
+ {
+ let unionSet=new Set(setA)
+ for(ele of setB)
+ {
+ unionSet.add(ele);
+ }
+ return unionSet;
+ }
+ function intersection(setA,setB)
+ {
+ let intersectionSet=new Set();
+ for(let ele of setB)
+ {
+ if(setA.has(ele))
+ {
+ intersectionSet.add(ele)
+ }
+ }
+ return intersectionSet;
+ }
+ function difference(setA,setB)
+ {
+ let differenceset=new Set(setA);
+ for(let ele of setB)
+ {
+ differenceset.delete(ele);
+ }
+ return differenceset;
+ }
+ function alldifference(setA,setB)
+ {
+ let differenceset=new Set(setA);
+ for(let ele of setB)
+ {
+ if(setA.has(ele)){
+ differenceset.delete(ele);}
+ else
+ {
+differenceset.add(ele);
+ }
+ }
+ return differenceset;
+ }
+ document.write(union(setA , setB));
+ document.write("<br>");
+ document.write(intersection(setA,setB));
+ document.write("<br>");
+ document.write(difference(setA,setB));
+ document.write("<br>");
+ document.write(alldifference(setA,setB));
+ console.log(union(setA , setB));
+ console.log("<br>");
+ console.log(intersection(setA,setB));
+ console.log("<br>");
+ console.log(difference(setA,setB));
+ console.log("<br>");
+ console.log(alldifference(setA,setB));
+ </script>
+ </html
